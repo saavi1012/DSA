@@ -2,7 +2,7 @@
 // Remember to update mid after every iteration
 // Remember to check the condition for elemrnt not found
 
-
+import javax.sound.midi.Soundbank;
 
 public class binary_search {
     public static void binarySearch(int arr[], int target){
@@ -13,11 +13,12 @@ public class binary_search {
     while(start<=end){
         if (arr[mid]==target){
             System.out.println(mid);
-            break;
+            
         }
 
         else if(arr[mid]>target){
             end = mid-1;
+            System.out.println("Found at: " + );
         }
         else{
             start = mid+1;
@@ -33,8 +34,8 @@ public class binary_search {
     }
 
     public static void main(String[] args) {
-        int arr[] = { 1,2,3,4,5,6,7,8,9,10 };
-        int target = 9;
+        int arr[] = { 1,2,3,3,3,3,4,5,6 };
+        int target = 3;
         
         binarySearch(arr, target);
 
